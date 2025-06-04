@@ -1,0 +1,1397 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Découvrez Notre Destination - Tourisme Local</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="font-sans bg-gray-50">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-lg sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-14 lg:px-28">
+            <div class="flex justify-between h-16">
+                <div class="flex items-center">
+                    <div class="flex-shrink-0 flex items-center">
+    <img src="EXPLORE (1).jpg" alt="Logo ExploreLocal" class="h-14 mr-15"> <!-- Ajustez la hauteur (h-10) selon vos besoins -->
+</div>
+                </div>
+                <div class="hidden md:ml-6 md:flex md:items-center md:space-x-8">
+                    <a href="#home" class="nav-link text-gray-900 px-3 py-2 text-sm font-medium">Accueil</a>
+                    <a href="#accommodation" class="nav-link text-gray-500 hover:text-gray-900 px-3 py-2 text-sm font-medium">Hébergement</a>
+                    <a href="#events" class="nav-link text-gray-500 hover:text-gray-900 px-3 py-2 text-sm font-medium">Événements</a>
+                    <a href="#trips" class="nav-link text-gray-500 hover:text-gray-900 px-3 py-2 text-sm font-medium">Découvertes</a>
+                    <a href="#shop" class="nav-link text-gray-500 hover:text-gray-900 px-3 py-2 text-sm font-medium">Boutique</a>
+                    <a href="#culture" class="nav-link text-gray-500 hover:text-gray-900 px-3 py-2 text-sm font-medium">Culture</a>
+                    <a href="#contact" class="nav-link text-gray-500 hover:text-gray-900 px-3 py-2 text-sm font-medium">Contact</a>
+                    <button class="bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounded-md text-sm font-medium smooth-transition">
+                        <i class="fas fa-user mr-1"></i> Espace Pro
+                    </button>
+                </div>
+                <div class="-mr-2 flex items-center md:hidden">
+                    <button type="button" class="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none" aria-controls="mobile-menu" aria-expanded="false" id="mobile-menu-button">
+                        <span class="sr-only">Open main menu</span>
+                        <svg class="block h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile menu -->
+        <div class="hidden md:hidden" id="mobile-menu">
+            <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3 bg-white rounded-lg shadow-lg border-t border-gray-100 animate-fade-in">
+                <a href="#home" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-blue-600 hover:bg-blue-50 transition-colors duration-200">Accueil</a>
+                <a href="#accommodation" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-blue-600 hover:bg-blue-50 transition-colors duration-200">Hébergement</a>
+                <a href="#events" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-blue-600 hover:bg-blue-50 transition-colors duration-200">Événements</a>
+                <a href="#trips" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-blue-600 hover:bg-blue-50 transition-colors duration-200">Découvertes</a>
+                <a href="#shop" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-blue-600 hover:bg-blue-50 transition-colors duration-200">Boutique</a>
+                <a href="#culture" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-blue-600 hover:bg-blue-50 transition-colors duration-200">Culture</a>
+                <a href="#contact" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-blue-600 hover:bg-blue-50 transition-colors duration-200">Contact</a>
+                <a href="#" class="block mt-3 px-3 py-2 bg-blue-500 text-white rounded-md text-base font-medium hover:bg-blue-600 transition-colors duration-200 text-center">Espace Pro</a>
+            </div>
+        </div>
+        
+        <!-- Floating CTA -->
+        <div class="fixed bottom-6 right-6 z-50 md:hidden">
+            <button class="bg-blue-500 hover:bg-blue-600 text-white p-4 rounded-full shadow-lg transform hover:scale-105 transition-all duration-300">
+                <i class="fas fa-calendar-check text-xl"></i>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="relative h-screen bg-gray-900 overflow-hidden">
+        <div class="absolute inset-0 w-full h-full">
+            <video autoplay loop muted playsinline class="w-full h-full object-cover opacity-70">
+                <source src="Vidéo Drone Ziguinchor Ville.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <div class="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-black opacity-60"></div>
+        </div>
+        
+        <div class="relative z-10 flex flex-col justify-center items-center h-full text-center px-4">
+            <div class="max-w-4xl mx-auto animate-fade-in">
+                <h1 class="text-4xl md:text-6xl lg:text-7xl font-bold text-white mb-6 leading-tight">
+                    Découvrez Notre <span class="text-blue-400">Zig'Explore</span>
+                </h1>
+                <p class="text-xl md:text-2xl lg:text-3xl text-white mb-6 max-w-3xl mx-auto leading-relaxed">
+                    Voyagez au cœur de nos traditions, nature et culture.
+                </p>
+                <div class="flex flex-wrap justify-center gap-4">
+                    <button class="bg-blue-500 hover:bg-blue-600 text-white px-8 py-4 rounded-full text-lg font-semibold transform hover:scale-105 transition-all duration-300 shadow-lg">
+                        <i class="fas fa-map-marked-alt mr-2"></i> Explorer
+                        
+                    </button>
+                    <button class="bg-white hover:bg-gray-100 text-gray-800 px-8 py-4 rounded-full text-lg font-semibold transform hover:scale-105 transition-all duration-300 shadow-lg">
+                        <i class="fas fa-calendar-alt mr-2"></i> Événements
+                    </button>
+                </div>
+            </div>
+            
+            <!-- Scroll indicator -->
+            <div class="absolute bottom-10 left-1/2 transform -translate-x-1/2 animate-bounce">
+                <a href="#accommodation" class="text-white text-2xl">
+                    <i class="fas fa-chevron-down"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+<!-- FAQ Section -->
+<section class="py-16 bg-gray-100" id="faq">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-12">
+            <h2 class="text-3xl font-extrabold text-gray-900 sm:text-4xl">Questions <span class="text-blue-500">Fréquentes</span></h2>
+            <p class="mt-3 max-w-2xl mx-auto text-xl text-gray-500 sm:mt-4">
+                Tout ce que vous devez savoir pour préparer votre séjour
+            </p>
+        </div>
+        
+        <div class="max-w-3xl mx-auto divide-y divide-gray-200" id="faq-container">
+            <!-- FAQ Item 1 -->
+            <div class="py-6 faq-item">
+                <button class="flex justify-between items-center w-full text-left focus:outline-none group"
+                        aria-expanded="false"
+                        aria-controls="faq-1"
+                        onclick="toggleFAQ(event, 'faq-1')">
+                    <h3 class="text-lg font-medium text-gray-900 group-hover:text-blue-600 transition">Quelles sont les meilleures périodes pour visiter ?</h3>
+                    <span class="ml-6 h-7 flex items-center transform group-hover:scale-125 transition">
+                        <svg class="h-6 w-6 text-blue-500 transform transition-transform duration-300" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                        </svg>
+                    </span>
+                </button>
+                <div id="faq-1" class="mt-2 hidden faq-answer" aria-hidden="true">
+                    <div class="text-base text-gray-600 space-y-2">
+                        <p>La meilleure période pour visiter notre région s'étend de mai à septembre, avec un climat idéal et toutes les activités disponibles.</p>
+                        <ul class="pl-5 list-disc">
+                            <li><strong>Printemps</strong> : Floraisons spectaculaires (avril-juin)</li>
+                            <li><strong>Été</strong> : Festival d'été et activités nautiques (juillet-août)</li>
+                            <li><strong>Automne</strong> : Couleurs flamboyantes (septembre-octobre)</li>
+                            <li><strong>Hiver</strong> : Stations de ski à 30 minutes (novembre-mars)</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- FAQ Item 2 -->
+            <div class="py-6 faq-item">
+                <button class="flex justify-between items-center w-full text-left focus:outline-none group"
+                        aria-expanded="false"
+                        aria-controls="faq-2"
+                        onclick="toggleFAQ(event, 'faq-2')">
+                    <h3 class="text-lg font-medium text-gray-900 group-hover:text-blue-600 transition">Comment se déplacer dans la région ?</h3>
+                    <span class="ml-6 h-7 flex items-center transform group-hover:scale-125 transition">
+                        <svg class="h-6 w-6 text-blue-500 transform transition-transform duration-300" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                        </svg>
+                    </span>
+                </button>
+                <div id="faq-2" class="mt-2 hidden faq-answer" aria-hidden="true">
+                    <div class="text-base text-gray-600 space-y-3">
+                        <p>Nous proposons plusieurs options de transport :</p>
+                        <div class="grid md:grid-cols-2 gap-3">
+                            <div class="bg-white p-3 rounded-lg shadow">
+                                <h4 class="font-semibold text-blue-600">🚍 Transports publics</h4>
+                                <p class="text-sm mt-1">Réseau de bus dense avec pass journalier à 8€</p>
+                            </div>
+                            <div class="bg-white p-3 rounded-lg shadow">
+                                <h4 class="font-semibold text-blue-600">🚲 Location vélo</h4>
+                                <p class="text-sm mt-1">50 stations de vélos électriques</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- FAQ Item 3 -->
+            <div class="py-6 faq-item">
+                <button class="flex justify-between items-center w-full text-left focus:outline-none group"
+                        aria-expanded="false"
+                        aria-controls="faq-3"
+                        onclick="toggleFAQ(event, 'faq-3')">
+                    <h3 class="text-lg font-medium text-gray-900 group-hover:text-blue-600 transition">Les activités sont-elles adaptées aux familles avec enfants ?</h3>
+                    <span class="ml-6 h-7 flex items-center transform group-hover:scale-125 transition">
+                        <svg class="h-6 w-6 text-blue-500 transform transition-transform duration-300" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                        </svg>
+                    </span>
+                </button>
+                <div id="faq-3" class="mt-2 hidden faq-answer" aria-hidden="true">
+                    <div class="text-base text-gray-600">
+                        <p>Nous avons spécialement conçu des expériences pour tous les âges :</p>
+                        <div class="mt-3 space-y-4">
+                            <div class="flex items-start">
+                                <div class="flex-shrink-0 h-10 w-10 rounded-full bg-blue-100 flex items-center justify-center">
+                                    <svg class="h-5 w-5 text-blue-600" fill="currentColor" viewBox="0 0 20 20">
+                                        <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                                    </svg>
+                                </div>
+                                <div class="ml-3">
+                                    <h4 class="text-sm font-medium text-gray-900">0-3 ans</h4>
+                                    <p class="text-sm text-gray-600">Aires de jeux sécurisées, poussettes disponibles à la location, espaces nursing</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start">
+                                <div class="flex-shrink-0 h-10 w-10 rounded-full bg-blue-100 flex items-center justify-center">
+                                    <svg class="h-5 w-5 text-blue-600" fill="currentColor" viewBox="0 0 20 20">
+                                        <path fill-rule="evenodd" d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z" clip-rule="evenodd" />
+                                    </svg>
+                                </div>
+                                <div class="ml-3">
+                                    <h4 class="text-sm font-medium text-gray-900">4-12 ans</h4>
+                                    <p class="text-sm text-gray-600">Parcs aventures, chasses au trésor, ateliers créatifs, ferme pédagogique</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start">
+                                <div class="flex-shrink-0 h-10 w-10 rounded-full bg-blue-100 flex items-center justify-center">
+                                    <svg class="h-5 w-5 text-blue-600" fill="currentColor" viewBox="0 0 20 20">
+                                        <path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-6-3a2 2 0 11-4 0 2 2 0 014 0zm-2 4a5 5 0 00-4.546 2.916A5.986 5.986 0 0010 16a5.986 5.986 0 004.546-2.084A5 5 0 0010 11z" clip-rule="evenodd" />
+                                    </svg>
+                                </div>
+                                <div class="ml-3">
+                                    <h4 class="text-sm font-medium text-gray-900">Adolescents</h4>
+                                    <p class="text-sm text-gray-600">Activités sportives, escape games en plein air, soirées jeunes</p>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="mt-4 text-sm text-blue-600 font-medium flex items-center">
+                            <svg class="h-4 w-4 mr-1" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2h-1V9z" clip-rule="evenodd" />
+                            </svg>
+                            Tous nos restaurants proposent des menus enfants et des chaises hautes
+                        </p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- FAQ Item 4 -->
+            <div class="py-6 faq-item">
+                <button class="flex justify-between items-center w-full text-left focus:outline-none group"
+                        aria-expanded="false"
+                        aria-controls="faq-4"
+                        onclick="toggleFAQ(event, 'faq-4')">
+                    <h3 class="text-lg font-medium text-gray-900 group-hover:text-blue-600 transition">Peut-on réserver toutes les activités en ligne ?</h3>
+                    <span class="ml-6 h-7 flex items-center transform group-hover:scale-125 transition">
+                        <svg class="h-6 w-6 text-blue-500 transform transition-transform duration-300" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                        </svg>
+                    </span>
+                </button>
+                <div id="faq-4" class="mt-2 hidden faq-answer" aria-hidden="true">
+                    <div class="text-base text-gray-600">
+                        <p>Notre plateforme de réservation vous offre une expérience complète :</p>
+                        <div class="mt-3 bg-white p-4 rounded-lg shadow-sm">
+                            <div class="flex items-start">
+                                <div class="flex-shrink-0">
+                                    <svg class="h-6 w-6 text-green-500" fill="currentColor" viewBox="0 0 20 20">
+                                        <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+                                    </svg>
+                                </div>
+                                <div class="ml-3">
+                                    <h4 class="text-sm font-medium text-gray-900">Réservation instantanée</h4>
+                                    <p class="text-sm text-gray-600">95% de nos activités sont réservables en ligne avec confirmation immédiate</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start mt-4">
+                                <div class="flex-shrink-0">
+                                    <svg class="h-6 w-6 text-blue-500" fill="currentColor" viewBox="0 0 20 20">
+                                        <path d="M8.433 7.418c.155-.103.346-.196.567-.267v1.698a2.305 2.305 0 01-.567-.267C8.07 8.34 8 8.114 8 8c0-.114.07-.34.433-.582zM11 12.849v-1.698c.22.071.412.164.567.267.364.243.433.468.433.582 0 .114-.07.34-.433.582a2.305 2.305 0 01-.567.267z" />
+                                        <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-13a1 1 0 10-2 0v.092a4.535 4.535 0 00-1.676.662C6.602 6.234 6 7.009 6 8c0 .99.602 1.765 1.324 2.246.48.32 1.054.545 1.676.662v1.941c-.391-.127-.68-.317-.843-.504a1 1 0 10-1.51 1.31c.562.649 1.413 1.076 2.353 1.253V15a1 1 0 102 0v-.092a4.535 4.535 0 001.676-.662C13.398 13.766 14 12.991 14 12c0-.99-.602-1.765-1.324-2.246A4.535 4.535 0 0011 9.092V7.151c.391.127.68.317.843.504a1 1 0 101.511-1.31c-.563-.649-1.413-1.076-2.354-1.253V5z" clip-rule="evenodd" />
+                                    </svg>
+                                </div>
+                                <div class="ml-3">
+                                    <h4 class="text-sm font-medium text-gray-900">Paiement sécurisé</h4>
+                                    <p class="text-sm text-gray-600">CB, PayPal, virement et chèques vacances acceptés</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start mt-4">
+                                <div class="flex-shrink-0">
+                                    <svg class="h-6 w-6 text-purple-500" fill="currentColor" viewBox="0 0 20 20">
+                                        <path fill-rule="evenodd" d="M7 2a2 2 0 00-2 2v12a2 2 0 002 2h6a2 2 0 002-2V4a2 2 0 00-2-2H7zm3 14a1 1 0 100-2 1 1 0 000 2z" clip-rule="evenodd" />
+                                    </svg>
+                                </div>
+                                <div class="ml-3">
+                                    <h4 class="text-sm font-medium text-gray-900">Application mobile</h4>
+                                    <p class="text-sm text-gray-600">Toutes vos réservations accessibles hors connexion dans notre app dédiée</p>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="mt-3 text-sm text-gray-600">
+                            Pour les activités nécessitant une confirmation (comme les visites guidées privées), vous recevrez un email sous 24h.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- FAQ Item 5 -->
+            <div class="py-6 faq-item">
+                <button class="flex justify-between items-center w-full text-left focus:outline-none group"
+                        aria-expanded="false"
+                        aria-controls="faq-5"
+                        onclick="toggleFAQ(event, 'faq-5')">
+                    <h3 class="text-lg font-medium text-gray-900 group-hover:text-blue-600 transition">Quelles mesures sanitaires sont en place ?</h3>
+                    <span class="ml-6 h-7 flex items-center transform group-hover:scale-125 transition">
+                        <svg class="h-6 w-6 text-blue-500 transform transition-transform duration-300" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                        </svg>
+                    </span>
+                </button>
+                <div id="faq-5" class="mt-2 hidden faq-answer" aria-hidden="true">
+                    <div class="text-base text-gray-600">
+                        <div class="bg-blue-50 p-4 rounded-lg mb-3">
+                            <p class="flex items-center text-gray-700">
+                                <svg class="h-5 w-5 text-blue-500 mr-2" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M12.316 3.051a1 1 0 01.633 1.265l-4 12a1 1 0 11-1.898-.632l4-12a1 1 0 011.265-.633zM5.707 6.293a1 1 0 010 1.414L3.414 10l2.293 2.293a1 1 0 11-1.414 1.414l-3-3a1 1 0 010-1.414l3-3a1 1 0 011.414 0zm8.586 0a1 1 0 011.414 0l3 3a1 1 0 010 1.414l-3 3a1 1 0 11-1.414-1.414L16.586 10l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd" />
+                                </svg>
+                                <strong>Dernière mise à jour :</strong> Toutes nos installations respectent les protocoles sanitaires en vigueur
+                            </p>
+                        </div>
+                        <ul class="space-y-2 text-gray-600">
+                            <li class="flex items-start">
+                                <svg class="h-5 w-5 text-green-500 mr-2" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+                                </svg>
+                                <span>Gel hydroalcoolique disponible dans tous les espaces publics</span>
+                            </li>
+                            <li class="flex items-start">
+                                <svg class="h-5 w-5 text-green-500 mr-2" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+                                </svg>
+                                <span>Nettoyage renforcé des hébergements entre chaque client</span>
+                            </li>
+                            <li class="flex items-start">
+                                <svg class="h-5 w-5 text-green-500 mr-2" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+                                </svg>
+                                <span>Options de visite en petits groupes privilégiées</span>
+                            </li>
+                            <li class="flex items-start">
+                                <svg class="h-5 w-5 text-green-500 mr-2" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+                                </svg>
+                                <span>Personnel formé et vacciné</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="mt-10 text-center">
+            <a href="#contact" class="bg-blue-500 hover:bg-blue-600 text-white px-6 py-3 rounded-full text-lg font-semibold inline-flex items-center transition transform hover:scale-105">
+                <svg class="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 20 20">
+                    <path d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-8-3a1 1 0 00-.867.5 1 1 0 11-1.731-1A3 3 0 0113 8a3.001 3.001 0 01-2 2.83V11a1 1 0 11-2 0v-1a1 1 0 011-1 1 1 0 100-2zm0 8a1 1 0 100-2 1 1 0 000 2z" />
+                </svg>
+                Poser une question
+            </a>
+            <p class="mt-3 text-gray-500 text-sm">
+                Vous ne trouvez pas réponse à votre question ? Contactez-nous directement.
+            </p>
+        </div>
+    </div>
+</section>
+
+
+<!-- Testimonials Section -->
+    <section class="py-16 bg-gradient-to-r from-blue-500 to-blue-600 text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-extrabold sm:text-4xl">Ce que disent nos <span class="text-yellow-300">Visiteurs</span></h2>
+                <p class="mt-3 max-w-2xl mx-auto text-xl text-blue-100 sm:mt-4">
+                    Découvrez les expériences vécues par nos voyageurs
+                </p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Testimonial 1 -->
+                <div class="bg-white rounded-xl p-6 shadow-lg transform hover:-translate-y-2 transition-all duration-300">
+                    <div class="flex items-center mb-4">
+                        <div class="h-12 w-12 rounded-full overflow-hidden mr-4">
+                            <img src="https://randomuser.me/api/portraits/women/32.jpg" alt="Sophie Martin" class="h-full w-full object-cover">
+                        </div>
+                        <div>
+                            <h3 class="text-lg font-bold text-gray-900">Sophie Martin</h3>
+                            <div class="flex text-yellow-400">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 italic">"Une expérience inoubliable ! Les paysages sont à couper le souffle et l'accueil des locaux est chaleureux. Je recommande vivement la randonnée guidée."</p>
+                </div>
+                
+                <!-- Testimonial 2 -->
+                <div class="bg-white rounded-xl p-6 shadow-lg transform hover:-translate-y-2 transition-all duration-300">
+                    <div class="flex items-center mb-4">
+                        <div class="h-12 w-12 rounded-full overflow-hidden mr-4">
+                            <img src="https://randomuser.me/api/portraits/men/44.jpg" alt="Thomas Dubois" class="h-full w-full object-cover">
+                        </div>
+                        <div>
+                            <h3 class="text-lg font-bold text-gray-900">Thomas Dubois</h3>
+                            <div class="flex text-yellow-400">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 italic">"Le festival des arts traditionnels était fantastique ! J'ai découvert des talents locaux incroyables et la gastronomie était délicieuse. À ne pas manquer !"</p>
+                </div>
+                
+                <!-- Testimonial 3 -->
+                <div class="bg-white rounded-xl p-6 shadow-lg transform hover:-translate-y-2 transition-all duration-300">
+                    <div class="flex items-center mb-4">
+                        <div class="h-12 w-12 rounded-full overflow-hidden mr-4">
+                            <img src="https://randomuser.me/api/portraits/women/68.jpg" alt="Claire Leroy" class="h-full w-full object-cover">
+                        </div>
+                        <div>
+                            <h3 class="text-lg font-bold text-gray-900">Claire Leroy</h3>
+                            <div class="flex text-yellow-400">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 italic">"L'hôtel Éco-Luxe est un véritable havre de paix. Le personnel est aux petits soins et la vue depuis la chambre est magnifique. J'y retournerai sans hésiter !"</p>
+                </div>
+            </div>
+            
+            <div class="mt-10 text-center">
+                <button class="bg-white text-blue-600 hover:bg-blue-50 px-6 py-3 rounded-full text-lg font-semibold transform hover:scale-105 transition-all duration-300">
+                    <i class="fas fa-comment-dots mr-2"></i> Voir tous les avis
+                </button>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Accommodation Section -->
+<section id="accommodation" class="py-16 bg-gray-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-12">
+            <h2 class="text-3xl font-extrabold text-gray-900 sm:text-4xl">Hébergements <span class="text-blue-500">Disponibles</span></h2>
+            <p class="mt-3 max-w-2xl mx-auto text-xl text-gray-500 sm:mt-4">
+                Sélectionnez votre logement idéal
+            </p>
+        </div>
+
+        <!-- Filters -->
+        <div class="bg-white p-6 rounded-lg shadow-md mb-8">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-4">
+                <div>
+                    <label for="type-filter" class="block text-sm font-medium text-gray-700 mb-1">Type</label>
+                    <select id="type-filter" class="w-full border-gray-300 rounded-md shadow-sm focus:border-blue-500 focus:ring-blue-500">
+                        <option value="all">Tous</option>
+                        <option value="hotel">Hôtel</option>
+                        <option value="cabin">Cabane</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="price-filter" class="block text-sm font-medium text-gray-700 mb-1">Prix max</label>
+                    <select id="price-filter" class="w-full border-gray-300 rounded-md shadow-sm focus:border-blue-500 focus:ring-blue-500">
+                        <option value="9999">Illimité</option>
+                        <option value="100">100€</option>
+                        <option value="150">150€</option>
+                        <option value="200">200€</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="sort-by" class="block text-sm font-medium text-gray-700 mb-1">Trier par</label>
+                    <select id="sort-by" class="w-full border-gray-300 rounded-md shadow-sm focus:border-blue-500 focus:ring-blue-500">
+                        <option value="price-asc">Prix (croissant)</option>
+                        <option value="price-desc">Prix (décroissant)</option>
+                        <option value="rating">Meilleures notes</option>
+                    </select>
+                </div>
+                <div class="flex items-end">
+                    <button id="reset-filters" class="w-full bg-gray-200 hover:bg-gray-300 text-gray-800 py-2 px-4 rounded-md transition">
+                        Réinitialiser
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Accommodation List -->
+        <div id="accommodation-list" class="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <!-- Hotel Example -->
+            <div class="accommodation-card bg-white rounded-xl overflow-hidden shadow-lg transition-all duration-300 hover:shadow-xl" data-type="hotel" data-price="120" data-rating="4.8">
+                <div class="relative h-48 overflow-hidden">
+                    <img src="https://images.unsplash.com/photo-1566073771259-6a8506099945?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Hôtel Panorama" class="w-full h-full object-cover transition-transform duration-500 hover:scale-105">
+                    <div class="absolute top-4 left-4 bg-blue-500 text-white px-2 py-1 rounded-md text-xs font-semibold">
+                        ★ 4.8
+                    </div>
+                </div>
+                <div class="p-6">
+                    <div class="flex justify-between items-start mb-2">
+                        <h3 class="text-xl font-bold text-gray-900">Hôtel Panorama</h3>
+                        <span class="bg-blue-100 text-blue-800 text-xs font-medium px-2.5 py-0.5 rounded">Hôtel</span>
+                    </div>
+                    <div class="space-y-3">
+                        <p class="text-gray-600 flex items-center">
+                            <svg class="w-5 h-5 text-blue-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path>
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
+                            </svg>
+                            Centre-ville, 5min de la gare
+                        </p>
+                        <p class="text-gray-600 flex items-center">
+                            <svg class="w-5 h-5 text-blue-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path>
+                            </svg>
+                            +33 4 12 34 56 78
+                        </p>
+                    </div>
+                    <div class="mt-4 flex flex-wrap gap-2">
+                        <span class="bg-gray-100 text-gray-800 text-xs font-medium px-2.5 py-0.5 rounded">WiFi</span>
+                        <span class="bg-gray-100 text-gray-800 text-xs font-medium px-2.5 py-0.5 rounded">Petit-déj</span>
+                        <span class="bg-gray-100 text-gray-800 text-xs font-medium px-2.5 py-0.5 rounded">Spa</span>
+                    </div>
+                    <div class="mt-6 flex justify-between items-center">
+                        <div>
+                            <span class="text-gray-500 text-sm">à partir de</span>
+                            <span class="text-blue-500 font-bold text-xl ml-1">120€</span>
+                            <span class="text-gray-500 text-sm">/nuit</span>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+
+            <!-- Cabin Example -->
+            <div class="accommodation-card bg-white rounded-xl overflow-hidden shadow-lg transition-all duration-300 hover:shadow-xl" data-type="cabin" data-price="85" data-rating="4.9">
+                <div class="relative h-48 overflow-hidden">
+                    <img src="https://images.unsplash.com/photo-1582268611958-ebfd161ef9cf?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Cabane des Bois" class="w-full h-full object-cover transition-transform duration-500 hover:scale-105">
+                    <div class="absolute top-4 left-4 bg-blue-500 text-white px-2 py-1 rounded-md text-xs font-semibold">
+                        ★ 4.9
+                    </div>
+                </div>
+                <div class="p-6">
+                    <div class="flex justify-between items-start mb-2">
+                        <h3 class="text-xl font-bold text-gray-900">Cabane des Bois</h3>
+                        <span class="bg-green-100 text-green-800 text-xs font-medium px-2.5 py-0.5 rounded">Cabane</span>
+                    </div>
+                    <div class="space-y-3">
+                        <p class="text-gray-600 flex items-center">
+                            <svg class="w-5 h-5 text-blue-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path>
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
+                            </svg>
+                            Forêt de Montmorency, 30min du centre
+                        </p>
+                        <p class="text-gray-600 flex items-center">
+                            <svg class="w-5 h-5 text-blue-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path>
+                            </svg>
+                            +33 6 12 34 56 78
+                        </p>
+                    </div>
+                    <div class="mt-4 flex flex-wrap gap-2">
+                        <span class="bg-gray-100 text-gray-800 text-xs font-medium px-2.5 py-0.5 rounded">Jardin</span>
+                        <span class="bg-gray-100 text-gray-800 text-xs font-medium px-2.5 py-0.5 rounded">Cheminée</span>
+                        <span class="bg-gray-100 text-gray-800 text-xs font-medium px-2.5 py-0.5 rounded">Animaux</span>
+                    </div>
+                    <div class="mt-6 flex justify-between items-center">
+                        <div>
+                            <span class="text-gray-500 text-sm">à partir de</span>
+                            <span class="text-blue-500 font-bold text-xl ml-1">85€</span>
+                            <span class="text-gray-500 text-sm">/nuit</span>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- Cabin Example -->
+            <div class="accommodation-card bg-white rounded-xl overflow-hidden shadow-lg transition-all duration-300 hover:shadow-xl" data-type="cabin" data-price="85" data-rating="4.9">
+                <div class="relative h-48 overflow-hidden">
+                    <img src="https://images.unsplash.com/photo-1582268611958-ebfd161ef9cf?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Cabane des Bois" class="w-full h-full object-cover transition-transform duration-500 hover:scale-105">
+                    <div class="absolute top-4 left-4 bg-blue-500 text-white px-2 py-1 rounded-md text-xs font-semibold">
+                        ★ 4.9
+                    </div>
+                </div>
+                <div class="p-6">
+                    <div class="flex justify-between items-start mb-2">
+                        <h3 class="text-xl font-bold text-gray-900">Cabane des Bois</h3>
+                        <span class="bg-green-100 text-green-800 text-xs font-medium px-2.5 py-0.5 rounded">Cabane</span>
+                    </div>
+                    <div class="space-y-3">
+                        <p class="text-gray-600 flex items-center">
+                            <svg class="w-5 h-5 text-blue-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path>
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
+                            </svg>
+                            Forêt de Montmorency, 30min du centre
+                        </p>
+                        <p class="text-gray-600 flex items-center">
+                            <svg class="w-5 h-5 text-blue-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path>
+                            </svg>
+                            +33 6 12 34 56 78
+                        </p>
+                    </div>
+                    <div class="mt-4 flex flex-wrap gap-2">
+                        <span class="bg-gray-100 text-gray-800 text-xs font-medium px-2.5 py-0.5 rounded">Jardin</span>
+                        <span class="bg-gray-100 text-gray-800 text-xs font-medium px-2.5 py-0.5 rounded">Cheminée</span>
+                        <span class="bg-gray-100 text-gray-800 text-xs font-medium px-2.5 py-0.5 rounded">Animaux</span>
+                    </div>
+                    <div class="mt-6 flex justify-between items-center">
+                        <div>
+                            <span class="text-gray-500 text-sm">à partir de</span>
+                            <span class="text-blue-500 font-bold text-xl ml-1">85€</span>
+                            <span class="text-gray-500 text-sm">/nuit</span>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+
+            <!-- Cabin Example -->
+            <div class="accommodation-card bg-white rounded-xl overflow-hidden shadow-lg transition-all duration-300 hover:shadow-xl" data-type="cabin" data-price="85" data-rating="4.9">
+                <div class="relative h-48 overflow-hidden">
+                    <img src="https://images.unsplash.com/photo-1582268611958-ebfd161ef9cf?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Cabane des Bois" class="w-full h-full object-cover transition-transform duration-500 hover:scale-105">
+                    <div class="absolute top-4 left-4 bg-blue-500 text-white px-2 py-1 rounded-md text-xs font-semibold">
+                        ★ 4.9
+                    </div>
+                </div>
+                <div class="p-6">
+                    <div class="flex justify-between items-start mb-2">
+                        <h3 class="text-xl font-bold text-gray-900">Cabane des Bois</h3>
+                        <span class="bg-green-100 text-green-800 text-xs font-medium px-2.5 py-0.5 rounded">Cabane</span>
+                    </div>
+                    <div class="space-y-3">
+                        <p class="text-gray-600 flex items-center">
+                            <svg class="w-5 h-5 text-blue-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path>
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
+                            </svg>
+                            Forêt de Montmorency, 30min du centre
+                        </p>
+                        <p class="text-gray-600 flex items-center">
+                            <svg class="w-5 h-5 text-blue-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path>
+                            </svg>
+                            +33 6 12 34 56 78
+                        </p>
+                    </div>
+                    <div class="mt-4 flex flex-wrap gap-2">
+                        <span class="bg-gray-100 text-gray-800 text-xs font-medium px-2.5 py-0.5 rounded">Jardin</span>
+                        <span class="bg-gray-100 text-gray-800 text-xs font-medium px-2.5 py-0.5 rounded">Cheminée</span>
+                        <span class="bg-gray-100 text-gray-800 text-xs font-medium px-2.5 py-0.5 rounded">Animaux</span>
+                    </div>
+                    <div class="mt-6 flex justify-between items-center">
+                        <div>
+                            <span class="text-gray-500 text-sm">à partir de</span>
+                            <span class="text-blue-500 font-bold text-xl ml-1">85€</span>
+                            <span class="text-gray-500 text-sm">/nuit</span>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+  <!-- Events Section -->
+    <section id="events">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Événements <span class="highlight">Culturels</span></h2>
+                <p class="section-description">
+                    Vivez des expériences uniques au rythme de notre culture
+                </p>
+            </div>
+
+            <!-- Calendar Navigation -->
+            <div class="calendar-nav">
+                <button class="nav-button" id="prevMonth">
+                    <i class="fas fa-chevron-left"></i> Mois précédent
+                </button>
+                <h3 class="current-month" id="currentMonth">Janvier 2024</h3>
+                <button class="nav-button" id="nextMonth">
+                    Mois suivant <i class="fas fa-chevron-right"></i>
+                </button>
+            </div>
+
+            <!-- Calendar Grid -->
+            <div class="calendar-grid" id="calendarGrid">
+                <!-- Le calendrier sera généré par JavaScript -->
+            </div>
+
+            <!-- Légende des événements -->
+            <div class="legend">
+                <div class="legend-item">
+                    <div class="legend-color" style="background-color: #dbeafe;"></div>
+                    <span>Concerts</span>
+                </div>
+                <div class="legend-item">
+                    <div class="legend-color" style="background-color: #dcfce7;"></div>
+                    <span>Marchés</span>
+                </div>
+                <div class="legend-item">
+                    <div class="legend-color" style="background-color: #f3e8ff;"></div>
+                    <span>Visites</span>
+                </div>
+                <div class="legend-item">
+                    <div class="legend-color" style="background-color: #fee2e2;"></div>
+                    <span>Fêtes</span>
+                </div>
+                <div class="legend-item">
+                    <div class="legend-color" style="background-color: #fef3c7;"></div>
+                    <span>Festivals</span>
+                </div>
+                <div class="legend-item">
+                    <div class="legend-color" style="background-color: #fce7f3;"></div>
+                    <span>Théâtre</span>
+                </div>
+                <div class="legend-item">
+                    <div class="legend-color" style="background-color: #ecfdf5;"></div>
+                    <span>Expositions</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <!-- Trips Section -->
+<section id="trips" class="py-16 bg-gray-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-12">
+            <h2 class="text-3xl font-extrabold text-gray-900 sm:text-4xl">Excursions & <span class="text-blue-500">Découvertes</span></h2>
+            <p class="mt-3 max-w-2xl mx-auto text-xl text-gray-500 sm:mt-4">
+                Explorez notre région à travers des expériences uniques
+            </p>
+        </div>
+
+        <!-- Filters -->
+        <div class="bg-white p-6 rounded-lg shadow-md mb-8">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-4">
+                <div>
+                    <label for="activity-type" class="block text-sm font-medium text-gray-700 mb-1">Type d'activité</label>
+                    <select id="activity-type" class="w-full border-gray-300 rounded-md shadow-sm focus:border-blue-500 focus:ring-blue-500">
+                        <option value="all">Toutes</option>
+                        <option value="nature">Nature</option>
+                        <option value="culture">Culture</option>
+                        <option value="adventure">Aventure</option>
+                        <option value="gastronomy">Gastronomie</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="duration-filter" class="block text-sm font-medium text-gray-700 mb-1">Durée</label>
+                    <select id="duration-filter" class="w-full border-gray-300 rounded-md shadow-sm focus:border-blue-500 focus:ring-blue-500">
+                        <option value="all">Toutes</option>
+                        <option value="half-day">Demi-journée</option>
+                        <option value="full-day">Journée</option>
+                        <option value="multi-day">Plusieurs jours</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="difficulty-filter" class="block text-sm font-medium text-gray-700 mb-1">Difficulté</label>
+                    <select id="difficulty-filter" class="w-full border-gray-300 rounded-md shadow-sm focus:border-blue-500 focus:ring-blue-500">
+                        <option value="all">Tous niveaux</option>
+                        <option value="easy">Facile</option>
+                        <option value="medium">Moyen</option>
+                        <option value="hard">Difficile</option>
+                    </select>
+                </div>
+                <div class="flex items-end">
+                    <button id="filter-trips" class="w-full bg-blue-500 hover:bg-blue-600 text-white py-2 px-4 rounded-md transition flex items-center justify-center">
+                        <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 4a1 1 0 011-1h16a1 1 0 011 1v2.586a1 1 0 01-.293.707l-6.414 6.414a1 1 0 00-.293.707V17l-4 4v-6.586a1 1 0 00-.293-.707L3.293 7.293A1 1 0 013 6.586V4z"></path>
+                        </svg>
+                        Filtrer
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Trips Grid -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <!-- Trip 1 -->
+            <div class="trip-card bg-white rounded-xl overflow-hidden shadow-lg transition-all duration-300 hover:shadow-xl" data-type="nature" data-duration="half-day" data-difficulty="easy">
+                <div class="relative h-48 overflow-hidden">
+                    <img src="https://images.unsplash.com/photo-1506812574058-fc75fa93fead?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Randonnée nature" class="w-full h-full object-cover transition-transform duration-500 hover:scale-105">
+                    <div class="absolute top-4 right-4 bg-green-500 text-white px-2 py-1 rounded-md text-xs font-semibold">
+                        Nature
+                    </div>
+                </div>
+                <div class="p-6">
+                    <h3 class="text-xl font-bold text-gray-900 mb-2">Randonnée guidée en forêt</h3>
+                    <div class="flex items-center text-gray-600 mb-3">
+                        <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                        </svg>
+                        <span>3-4 heures • Facile</span>
+                    </div>
+                    <p class="text-gray-600 mb-4">Découvrez la faune et la flore locales avec nos guides naturalistes expérimentés.</p>
+                    <div class="flex justify-between items-center">
+                        <div>
+                            <span class="text-blue-500 font-bold text-lg">35€</span>
+                            <span class="text-gray-500 text-sm">/personne</span>
+                        </div>
+                        <button class="bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounded-md text-sm font-medium transition">
+                            Détails
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Trip 2 -->
+            <div class="trip-card bg-white rounded-xl overflow-hidden shadow-lg transition-all duration-300 hover:shadow-xl" data-type="culture" data-duration="half-day" data-difficulty="easy">
+                <div class="relative h-48 overflow-hidden">
+                    <img src="https://images.unsplash.com/photo-1501601983405-7c7cabaa1581?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Visite historique" class="w-full h-full object-cover transition-transform duration-500 hover:scale-105">
+                    <div class="absolute top-4 right-4 bg-yellow-500 text-white px-2 py-1 rounded-md text-xs font-semibold">
+                        Culture
+                    </div>
+                </div>
+                <div class="p-6">
+                    <h3 class="text-xl font-bold text-gray-900 mb-2">Visite du vieux quartier</h3>
+                    <div class="flex items-center text-gray-600 mb-3">
+                        <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                        </svg>
+                        <span>2-3 heures • Facile</span>
+                    </div>
+                    <p class="text-gray-600 mb-4">Plongez dans l'histoire fascinante de notre ville avec un guide passionné.</p>
+                    <div class="flex justify-between items-center">
+                        <div>
+                            <span class="text-blue-500 font-bold text-lg">25€</span>
+                            <span class="text-gray-500 text-sm">/personne</span>
+                        </div>
+                        <button class="bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounded-md text-sm font-medium transition">
+                            Détails
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Trip 3 -->
+            <div class="trip-card bg-white rounded-xl overflow-hidden shadow-lg transition-all duration-300 hover:shadow-xl" data-type="adventure" data-duration="full-day" data-difficulty="medium">
+                <div class="relative h-48 overflow-hidden">
+                    <img src="https://images.unsplash.com/photo-1534187886935-1e1236e856c3?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Canoë" class="w-full h-full object-cover transition-transform duration-500 hover:scale-105">
+                    <div class="absolute top-4 right-4 bg-red-500 text-white px-2 py-1 rounded-md text-xs font-semibold">
+                        Aventure
+                    </div>
+                </div>
+                <div class="p-6">
+                    <h3 class="text-xl font-bold text-gray-900 mb-2">Descente en canoë</h3>
+                    <div class="flex items-center text-gray-600 mb-3">
+                        <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                        </svg>
+                        <span>6-8 heures • Moyen</span>
+                    </div>
+                    <p class="text-gray-600 mb-4">Parcourez les gorges spectaculaires en canoë avec nos guides expérimentés.</p>
+                    <div class="flex justify-between items-center">
+                        <div>
+                            <span class="text-blue-500 font-bold text-lg">65€</span>
+                            <span class="text-gray-500 text-sm">/personne</span>
+                        </div>
+                        <button class="bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounded-md text-sm font-medium transition">
+                            Détails
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Trip 4 -->
+            <div class="trip-card bg-white rounded-xl overflow-hidden shadow-lg transition-all duration-300 hover:shadow-xl" data-type="gastronomy" data-duration="half-day" data-difficulty="easy">
+                <div class="relative h-48 overflow-hidden">
+                    <img src="https://images.unsplash.com/photo-1510626176961-4b57d4fbad03?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Dégustation" class="w-full h-full object-cover transition-transform duration-500 hover:scale-105">
+                    <div class="absolute top-4 right-4 bg-purple-500 text-white px-2 py-1 rounded-md text-xs font-semibold">
+                        Gastronomie
+                    </div>
+                </div>
+                <div class="p-6">
+                    <h3 class="text-xl font-bold text-gray-900 mb-2">Dégustation de vins</h3>
+                    <div class="flex items-center text-gray-600 mb-3">
+                        <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                        </svg>
+                        <span>3 heures • Facile</span>
+                    </div>
+                    <p class="text-gray-600 mb-4">Découvrez les crus locaux dans des domaines viticoles sélectionnés.</p>
+                    <div class="flex justify-between items-center">
+                        <div>
+                            <span class="text-blue-500 font-bold text-lg">45€</span>
+                            <span class="text-gray-500 text-sm">/personne</span>
+                        </div>
+                        <button class="bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounded-md text-sm font-medium transition">
+                            Détails
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Trip 5 -->
+            <div class="trip-card bg-white rounded-xl overflow-hidden shadow-lg transition-all duration-300 hover:shadow-xl" data-type="nature" data-duration="full-day" data-difficulty="hard">
+                <div class="relative h-48 overflow-hidden">
+                    <img src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Randonnée montagne" class="w-full h-full object-cover transition-transform duration-500 hover:scale-105">
+                    <div class="absolute top-4 right-4 bg-green-500 text-white px-2 py-1 rounded-md text-xs font-semibold">
+                        Nature
+                    </div>
+                </div>
+                <div class="p-6">
+                    <h3 class="text-xl font-bold text-gray-900 mb-2">Ascension du Mont Vert</h3>
+                    <div class="flex items-center text-gray-600 mb-3">
+                        <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                        </svg>
+                        <span>8-10 heures • Difficile</span>
+                    </div>
+                    <p class="text-gray-600 mb-4">Une randonnée exigeante avec une vue panoramique à couper le souffle.</p>
+                    <div class="flex justify-between items-center">
+                        <div>
+                            <span class="text-blue-500 font-bold text-lg">55€</span>
+                            <span class="text-gray-500 text-sm">/personne</span>
+                        </div>
+                        <button class="bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounded-md text-sm font-medium transition">
+                            Détails
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Trip 6 -->
+            <div class="trip-card bg-white rounded-xl overflow-hidden shadow-lg transition-all duration-300 hover:shadow-xl" data-type="culture" data-duration="multi-day" data-difficulty="easy">
+                <div class="relative h-48 overflow-hidden">
+                    <img src="https://images.unsplash.com/photo-1470004914212-05527e49370b?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Circuit culturel" class="w-full h-full object-cover transition-transform duration-500 hover:scale-105">
+                    <div class="absolute top-4 right-4 bg-yellow-500 text-white px-2 py-1 rounded-md text-xs font-semibold">
+                        Culture
+                    </div>
+                </div>
+                <div class="p-6">
+                    <h3 class="text-xl font-bold text-gray-900 mb-2">Circuit des villages typiques</h3>
+                    <div class="flex items-center text-gray-600 mb-3">
+                        <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                        </svg>
+                        <span>2 jours • Facile</span>
+                    </div>
+                    <p class="text-gray-600 mb-4">Découvrez le charme authentique des villages de notre région.</p>
+                    <div class="flex justify-between items-center">
+                        <div>
+                            <span class="text-blue-500 font-bold text-lg">120€</span>
+                            <span class="text-gray-500 text-sm">/personne</span>
+                        </div>
+                        <button class="bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounded-md text-sm font-medium transition">
+                            Détails
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="text-center mt-10">
+            <button class="border-2 border-blue-500 text-blue-500 hover:bg-blue-500 hover:text-white px-6 py-3 rounded-full text-lg font-semibold transition">
+                Voir toutes les excursions
+                <svg class="w-5 h-5 ml-2 inline" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
+                </svg>
+            </button>
+        </div>
+    </div>
+</section>
+
+<!-- Boutique Artisanale Section -->
+<section id="shop" class="py-16 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-12">
+            <h2 class="text-3xl font-extrabold text-gray-900 sm:text-4xl">Boutique <span class="text-blue-500">Artisanale</span></h2>
+            <p class="mt-3 max-w-2xl mx-auto text-xl text-gray-500 sm:mt-4">
+                Découvrez nos produits artisanaux fabriqués localement
+            </p>
+        </div>
+
+        <!-- Categories -->
+        <div class="mb-10 flex flex-wrap justify-center gap-4">
+            <button class="category-btn px-4 py-2 rounded-full bg-blue-500 text-white font-medium" data-category="all">
+                Tous les produits
+            </button>
+            <button class="category-btn px-4 py-2 rounded-full bg-gray-200 text-gray-800 font-medium hover:bg-gray-300 transition" data-category="ceramics">
+                Céramiques
+            </button>
+            <button class="category-btn px-4 py-2 rounded-full bg-gray-200 text-gray-800 font-medium hover:bg-gray-300 transition" data-category="textiles">
+                Textiles
+            </button>
+            <button class="category-btn px-4 py-2 rounded-full bg-gray-200 text-gray-800 font-medium hover:bg-gray-300 transition" data-category="jewelry">
+                Bijoux
+            </button>
+            <button class="category-btn px-4 py-2 rounded-full bg-gray-200 text-gray-800 font-medium hover:bg-gray-300 transition" data-category="food">
+                Produits alimentaires
+            </button>
+        </div>
+
+        <!-- Products Grid -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
+            <!-- Product 1 -->
+            <div class="product-card bg-white rounded-lg overflow-hidden shadow-md hover:shadow-lg transition-shadow duration-300" data-category="ceramics">
+                <div class="relative h-64 overflow-hidden">
+                    <img src="les-3-vases-en-terre-cuite.jpg" 
+                         alt="Vase en céramique artisanale" 
+                         class="w-full h-full object-cover transition-transform duration-500 hover:scale-105">
+                    <div class="absolute top-2 right-2 bg-red-500 text-white text-xs px-2 py-1 rounded-full">
+                        Nouveau
+                    </div>
+                </div>
+                <div class="p-4">
+                    <h3 class="text-lg font-semibold text-gray-900 mb-1">Vase Terre Cuite</h3>
+                    <p class="text-sm text-gray-500 mb-2">Fabriqué par l'atelier Dubois</p>
+                    <div class="flex justify-between items-center">
+                        <span class="text-blue-500 font-bold">42€</span>
+                        <button class="add-to-cart bg-gray-100 hover:bg-gray-200 text-gray-800 px-3 py-1 rounded-md text-sm transition flex items-center">
+                            <svg class="w-4 h-4 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z"></path>
+                            </svg>
+                            Ajouter
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product 2 -->
+            <div class="product-card bg-white rounded-lg overflow-hidden shadow-md hover:shadow-lg transition-shadow duration-300" data-category="textiles">
+                <div class="relative h-64 overflow-hidden">
+                    <img src="https://images.unsplash.com/photo-1592066575517-58df903152f2?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" 
+                         alt="Écharpe en laine tissée main" 
+                         class="w-full h-full object-cover transition-transform duration-500 hover:scale-105">
+                </div>
+                <div class="p-4">
+                    <h3 class="text-lg font-semibold text-gray-900 mb-1">Écharpe en Laine</h3>
+                    <p class="text-sm text-gray-500 mb-2">Tissée main par Marie-Claire</p>
+                    <div class="flex justify-between items-center">
+                        <span class="text-blue-500 font-bold">38€</span>
+                        <button class="add-to-cart bg-gray-100 hover:bg-gray-200 text-gray-800 px-3 py-1 rounded-md text-sm transition flex items-center">
+                            <svg class="w-4 h-4 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z"></path>
+                            </svg>
+                            Ajouter
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product 3 -->
+            <div class="product-card bg-white rounded-lg overflow-hidden shadow-md hover:shadow-lg transition-shadow duration-300" data-category="jewelry">
+                <div class="relative h-64 overflow-hidden">
+                    <img src="https://images.unsplash.com/photo-1605100804763-247f67b3557e?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" 
+                         alt="Collier en argent et pierres locales" 
+                         class="w-full h-full object-cover transition-transform duration-500 hover:scale-105">
+                    <div class="absolute top-2 right-2 bg-green-500 text-white text-xs px-2 py-1 rounded-full">
+                        Éco-responsable
+                    </div>
+                </div>
+                <div class="p-4">
+                    <h3 class="text-lg font-semibold text-gray-900 mb-1">Collier "Pierre de Lune"</h3>
+                    <p class="text-sm text-gray-500 mb-2">Création unique par Sophie</p>
+                    <div class="flex justify-between items-center">
+                        <span class="text-blue-500 font-bold">65€</span>
+                        <button class="add-to-cart bg-gray-100 hover:bg-gray-200 text-gray-800 px-3 py-1 rounded-md text-sm transition flex items-center">
+                            <svg class="w-4 h-4 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z"></path>
+                            </svg>
+                            Ajouter
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product 4 -->
+            <div class="product-card bg-white rounded-lg overflow-hidden shadow-md hover:shadow-lg transition-shadow duration-300" data-category="food">
+                <div class="relative h-64 overflow-hidden">
+                    <img src="https://images.unsplash.com/photo-1517686469429-8bdb88b9f907?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" 
+                         alt="Confiture artisanale" 
+                         class="w-full h-full object-cover transition-transform duration-500 hover:scale-105">
+                </div>
+                <div class="p-4">
+                    <h3 class="text-lg font-semibold text-gray-900 mb-1">Confiture de Myrtilles</h3>
+                    <p class="text-sm text-gray-500 mb-2">Production locale - Pot 250g</p>
+                    <div class="flex justify-between items-center">
+                        <span class="text-blue-500 font-bold">6.50€</span>
+                        <button class="add-to-cart bg-gray-100 hover:bg-gray-200 text-gray-800 px-3 py-1 rounded-md text-sm transition flex items-center">
+                            <svg class="w-4 h-4 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z"></path>
+                            </svg>
+                            Ajouter
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="text-center mt-12">
+            <a href="#" class="inline-flex items-center px-6 py-3 border border-transparent text-base font-medium rounded-full shadow-sm text-white bg-blue-500 hover:bg-blue-600 transition">
+                Visiter notre boutique en ligne
+                <svg class="ml-2 -mr-1 w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
+                </svg>
+            </a>
+        </div>
+    </div>
+</section>
+
+<!-- Culture Section -->
+<section id="culture" class="py-16 bg-gray-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-12">
+            <h2 class="text-3xl font-extrabold text-gray-900 sm:text-4xl">Culture <span class="text-blue-500">Locale</span></h2>
+            <p class="mt-3 max-w-2xl mx-auto text-xl text-gray-500 sm:mt-4">
+                Découvrez le riche patrimoine de notre région
+            </p>
+        </div>
+
+        <!-- Culture Navigation -->
+        <div class="mb-10 flex flex-wrap justify-center gap-2">
+            <button class="culture-nav-btn px-4 py-2 rounded-full bg-blue-500 text-white font-medium" data-category="all">
+                Tout voir
+            </button>
+            <button class="culture-nav-btn px-4 py-2 rounded-full bg-gray-200 text-gray-800 font-medium hover:bg-gray-300 transition" data-category="heritage">
+                Patrimoine
+            </button>
+            <button class="culture-nav-btn px-4 py-2 rounded-full bg-gray-200 text-gray-800 font-medium hover:bg-gray-300 transition" data-category="museums">
+                Musées
+            </button>
+            <button class="culture-nav-btn px-4 py-2 rounded-full bg-gray-200 text-gray-800 font-medium hover:bg-gray-300 transition" data-category="events">
+                Événements
+            </button>
+            <button class="culture-nav-btn px-4 py-2 rounded-full bg-gray-200 text-gray-800 font-medium hover:bg-gray-300 transition" data-category="traditions">
+                Traditions
+            </button>
+        </div>
+
+        <!-- Culture Grid -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <!-- Item 1 - Heritage -->
+            <div class="culture-card bg-white rounded-lg overflow-hidden shadow-md hover:shadow-lg transition-shadow duration-300" data-category="heritage">
+                <div class="relative h-48 overflow-hidden">
+                    <img src="https://images.unsplash.com/photo-1564501049412-61c2a3083791?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" 
+                         alt="Château historique" 
+                         class="w-full h-full object-cover transition-transform duration-500 hover:scale-105">
+                    <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black to-transparent p-4">
+                        <span class="text-white font-medium">Monument classé</span>
+                    </div>
+                </div>
+                <div class="p-4">
+                    <h3 class="text-xl font-semibold text-gray-900 mb-2">Château de la Vallée</h3>
+                    <p class="text-gray-600 mb-3">Forteresse médiévale datant du XIIe siècle avec des jardins à la française.</p>
+                    <div class="flex items-center text-gray-500 text-sm">
+                        <svg class="w-4 h-4 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path>
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
+                        </svg>
+                        <span>10km du centre-ville</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Item 2 - Museum -->
+            <div class="culture-card bg-white rounded-lg overflow-hidden shadow-md hover:shadow-lg transition-shadow duration-300" data-category="museums">
+                <div class="relative h-48 overflow-hidden">
+                    <img src="https://images.unsplash.com/photo-1575224300306-1b8da36134ec?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" 
+                         alt="Musée des Beaux-Arts" 
+                         class="w-full h-full object-cover transition-transform duration-500 hover:scale-105">
+                    <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black to-transparent p-4">
+                        <span class="text-white font-medium">Collection permanente</span>
+                    </div>
+                </div>
+                <div class="p-4">
+                    <h3 class="text-xl font-semibold text-gray-900 mb-2">Musée des Beaux-Arts</h3>
+                    <p class="text-gray-600 mb-3">Plus de 500 œuvres du XVe au XXIe siècle, avec une section dédiée aux artistes locaux.</p>
+                    <div class="flex items-center text-gray-500 text-sm">
+                        <svg class="w-4 h-4 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                        </svg>
+                        <span>Ouvert 10h-18h (fermé lundi)</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Item 3 - Event -->
+            <div class="culture-card bg-white rounded-lg overflow-hidden shadow-md hover:shadow-lg transition-shadow duration-300" data-category="events">
+                <div class="relative h-48 overflow-hidden">
+                    <img src="https://images.unsplash.com/photo-1492684223066-81342ee5ff30?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" 
+                         alt="Festival d'été" 
+                         class="w-full h-full object-cover transition-transform duration-500 hover:scale-105">
+                    <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black to-transparent p-4">
+                        <span class="text-white font-medium">Événement annuel</span>
+                    </div>
+                </div>
+                <div class="p-4">
+                    <h3 class="text-xl font-semibold text-gray-900 mb-2">Festival des Arts Vivants</h3>
+                    <p class="text-gray-600 mb-3">Spectacles de rue, théâtre et concerts pendant 3 jours en juillet.</p>
+                    <div class="flex items-center text-gray-500 text-sm">
+                        <svg class="w-4 h-4 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
+                        </svg>
+                        <span>15-17 juillet 2023</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Item 4 - Traditions -->
+            <div class="culture-card bg-white rounded-lg overflow-hidden shadow-md hover:shadow-lg transition-shadow duration-300" data-category="traditions">
+                <div class="relative h-48 overflow-hidden">
+                    <img src="https://images.unsplash.com/photo-1511795409834-ef04bbd61622?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" 
+                         alt="Fête traditionnelle" 
+                         class="w-full h-full object-cover transition-transform duration-500 hover:scale-105">
+                    <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black to-transparent p-4">
+                        <span class="text-white font-medium">Tradition séculaire</span>
+                    </div>
+                </div>
+                <div class="p-4">
+                    <h3 class="text-xl font-semibold text-gray-900 mb-2">Fête des Moissons</h3>
+                    <p class="text-gray-600 mb-3">Célébration ancestrale marquant la fin des récoltes avec défilés et banquets.</p>
+                    <div class="flex items-center text-gray-500 text-sm">
+                        <svg class="w-4 h-4 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
+                        </svg>
+                        <span>Dernier dimanche d'août</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Item 5 - Heritage -->
+            <div class="culture-card bg-white rounded-lg overflow-hidden shadow-md hover:shadow-lg transition-shadow duration-300" data-category="heritage">
+                <div class="relative h-48 overflow-hidden">
+                    <img src="https://images.unsplash.com/photo-1471623432079-b009d30b6729?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" 
+                         alt="Vieille ville" 
+                         class="w-full h-full object-cover transition-transform duration-500 hover:scale-105">
+                    <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black to-transparent p-4">
+                        <span class="text-white font-medium">Site protégé</span>
+                    </div>
+                </div>
+                <div class="p-4">
+                    <h3 class="text-xl font-semibold text-gray-900 mb-2">Quartier Historique</h3>
+                    <p class="text-gray-600 mb-3">Promenade à travers les ruelles pavées et les maisons à colombages du XVIe siècle.</p>
+                    <div class="flex items-center text-gray-500 text-sm">
+                        <svg class="w-4 h-4 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path>
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
+                        </svg>
+                        <span>Centre-ville</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Item 6 - Museum -->
+            <div class="culture-card bg-white rounded-lg overflow-hidden shadow-md hover:shadow-lg transition-shadow duration-300" data-category="museums">
+                <div class="relative h-48 overflow-hidden">
+                    <img src="https://images.unsplash.com/photo-1572949645841-094f3a9c4c94?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" 
+                         alt="Musée d'art moderne" 
+                         class="w-full h-full object-cover transition-transform duration-500 hover:scale-105">
+                    <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black to-transparent p-4">
+                        <span class="text-white font-medium">Exposition temporaire</span>
+                    </div>
+                </div>
+                <div class="p-4">
+                    <h3 class="text-xl font-semibold text-gray-900 mb-2">Musée d'Art Moderne</h3>
+                    <p class="text-gray-600 mb-3">Collections d'art contemporain avec des œuvres d'artistes internationaux et locaux.</p>
+                    <div class="flex items-center text-gray-500 text-sm">
+                        <svg class="w-4 h-4 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                        </svg>
+                        <span>Ouvert 11h-19h (fermé mardi)</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="text-center mt-12">
+            <a href="#" class="inline-flex items-center px-6 py-3 border border-transparent text-base font-medium rounded-full shadow-sm text-white bg-blue-500 hover:bg-blue-600 transition">
+                Voir tout le programme culturel
+                <svg class="ml-2 -mr-1 w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
+                </svg>
+            </a>
+        </div>
+    </div>
+</section>
+
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-extrabold text-gray-900 sm:text-4xl">Contactez-<span class="text-blue-500">nous</span></h2>
+                <p class="mt-3 max-w-2xl mx-auto text-xl text-gray-500 sm:mt-4">
+                    Nous sommes à votre disposition pour toute question
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+                <div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-4">Informations de contact</h3>
+                    <div class="space-y-4">
+                        <div class="flex items-start">
+                            <i class="fas fa-map-marker-alt text-blue-500 mt-1 mr-3"></i>
+                            <div>
+                                <h4 class="font-medium text-gray-800">Adresse</h4>
+                                <p class="text-gray-600">123 Rue du Tourisme, Ziguinchor, Sénégal</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <i class="fas fa-phone-alt text-blue-500 mt-1 mr-3"></i>
+                            <div>
+                                <h4 class="font-medium text-gray-800">Téléphone</h4>
+                                <p class="text-gray-600">+221 33 123 45 67</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <i class="fas fa-envelope text-blue-500 mt-1 mr-3"></i>
+                            <div>
+                                <h4 class="font-medium text-gray-800">Email</h4>
+                                <p class="text-gray-600">contact@exploreziguinchor.com</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-4">Envoyez-nous un message</h3>
+                    <form class="space-y-4">
+                        <div>
+                            <label for="name" class="block text-sm font-medium text-gray-700 mb-1">Nom complet</label>
+                            <input type="text" id="name" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-blue-500 focus:border-blue-500">
+                        </div>
+                        <div>
+                            <label for="email" class="block text-sm font-medium text-gray-700 mb-1">Email</label>
+                            <input type="email" id="email" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-blue-500 focus:border-blue-500">
+                        </div>
+                        <div>
+                            <label for="message" class="block text-sm font-medium text-gray-700 mb-1">Message</label>
+                            <textarea id="message" rows="4" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-blue-500 focus:border-blue-500"></textarea>
+                        </div>
+                        <button type="submit" class="bg-blue-500 hover:bg-blue-600 text-white px-6 py-3 rounded-md font-medium smooth-transition">
+                            Envoyer le message
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="text-lg font-bold mb-4">ExploreLocal</h3>
+                    <p class="text-gray-400">Découvrez les merveilles de Ziguinchor et sa région à travers nos expériences uniques.</p>
+                </div>
+                <div>
+                    <h4 class="font-bold mb-4">Liens rapides</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#home" class="text-gray-400 hover:text-white transition">Accueil</a></li>
+                        <li><a href="#accommodation" class="text-gray-400 hover:text-white transition">Hébergements</a></li>
+                        <li><a href="#events" class="text-gray-400 hover:text-white transition">Événements</a></li>
+                        <li><a href="#trips" class="text-gray-400 hover:text-white transition">Excursions</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-bold mb-4">Contact</h4>
+                    <address class="text-gray-400 not-italic">
+                        <p>123 Rue du Tourisme</p>
+                        <p>Ziguinchor, Sénégal</p>
+                        <p class="mt-2">contact@exploreziguinchor.com</p>
+                        <p>+221 33 123 45 67</p>
+                    </address>
+                </div>
+                <div>
+                    <h4 class="font-bold mb-4">Newsletter</h4>
+                    <form class="flex">
+                        <input type="email" placeholder="Votre email" class="px-4 py-2 rounded-l-md w-full text-gray-800">
+                        <button type="submit" class="bg-blue-500 hover:bg-blue-600 px-4 py-2 rounded-r-md">
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </form>
+                    <div class="flex space-x-4 mt-4">
+                        <a href="#" class="text-gray-400 hover:text-white text-xl"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white text-xl"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white text-xl"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-gray-700 mt-8 pt-8 text-center text-gray-400">
+                <p>&copy; 2023 ExploreLocal Ziguinchor. Tous droits réservés.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
