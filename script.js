@@ -1,4 +1,7 @@
-//culture 
+// Load and persist FAQ state
+const faqState = JSON.parse(localStorage.getItem('faqState')) || {};
+
+//culture
 document.addEventListener('DOMContentLoaded', function() {
     const cultureNavBtns = document.querySelectorAll('.culture-nav-btn');
     const cultureCards = document.querySelectorAll('.culture-card');
