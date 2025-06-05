@@ -1,3 +1,4 @@
+const faqState = JSON.parse(localStorage.getItem('faqState') || '{}');
 //culture 
 document.addEventListener('DOMContentLoaded', function() {
     const cultureNavBtns = document.querySelectorAll('.culture-nav-btn');
